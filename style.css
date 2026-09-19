@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background-image: url(bbg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  background: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hlogo {
+  width: 40px;
+  padding: 5px;
+}
+.hh1 {
+  color: white;
+  font-family: Playfair Display;
+  font-size: 100%;
+}
+.material-symbols-outlined {
+  color: white;
+  position: absolute;
+  right:3%;
+  text-decoration: none;
+}
+.animeTitle {
+  text-align: center;
+  font-family: Smooch Sans;
+  color: white;
+}
+.Ep1 {
+  width:90%;
+  border-radius: 5px;
+}
+.vid {
+  display: flex;
+  justify-content: center;
+}
+.episodes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+.episodes a{
+  text-decoration: none;
+  color:white;
+  background:black;
+  font-family: Smooch Sans;
+  padding: 8px 15px;
+  border-radius:5px;
+  transition: background 0.25s, color 0.25s;
+}
+.episodes a.active {
+  background:white;
+  color: black;
+}
+.epparent {
+  display: flex;
+  justify-content: center;
+}
+.episodes a:hover{
+  color: black;
+  background:white;
+}
