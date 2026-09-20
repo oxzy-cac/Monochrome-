@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background-image: url(bbg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  background: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hlogo {
+  width: 40px;
+  padding: 5px;
+}
+.hh1 {
+  color: white;
+  font-family: Playfair Display;
+  font-size: 100%;
+}
+.material-symbols-outlined {
+  color: white;
+  position: absolute;
+  right:3%;
+  text-decoration: none;
+}
+.animeTitle {
+  text-align: center;
+  font-family: Smooch Sans;
+  color: white;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+.kizna {
+  width: 90%;
+  border-radius: 10px;
+}
+p {
+  color: white;
+  font-family: Smooch Sans;
+  text-align: center;
+  margin: 30px;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.btn {
+  font-size: 110%;
+  font-weight: bold;
+  font-family: Smooch Sans;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: scale 0.25s;
+}
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  left:0;
+  top:0;
+  border-radius: 10px;
+}
+.btn::before {
+  content: "";
+  background: linear-gradient(45deg,red,hwb(24 0% 0%),yellow, hwb(120 0% 5%), cyan, hwb(240 36% 0%), hwb(300 0% 13%), pink, red);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glow 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glow {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+.btn:hover {
+  scale: 110%;
+}
+.btn:active:after{
+  background: transparent;
+}
+.btn:active {
+  color: black;
+}
